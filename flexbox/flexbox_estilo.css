@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.8rem;
+}
+
+main {
+    /* padding: 7rem 0; */
+}
+
+h1 {
+    color: blueviolet;
+    font-weight: 900;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.boxes{
+    /* height: calc(100vh - 14rem); */
+    height: calc(100vh);
+    position: relative;
+    display: flex;
+    /* coluna em colunas ou usando column-reverse ela inverte a ordem */
+    /* row-reverse inverte a linha  */
+    /* flex-direction: row wrap; */
+    /* adiciona quebra de linha quando necessário */
+    /* flex-wrap: wrap; */
+    flex-flow: row wrap;
+    /* justify-items: center; */
+    justify-content: space-around;
+    /* align-items: center; */
+    align-content: center;
+    /* espaço entre os itens */
+    gap: 2rem 3rem;
+}
+
+.box {
+    min-height: 10rem;
+    min-width: 15rem;
+    padding: 1.5rem;
+    background-color: blue;
+    border: 10px solid red;
+    border-radius: 0.4rem;
+    color: #fff;
+    font-size: 4rem;
+    display: inline-block;
+    order: 10;
+    /* elementos em tamanhos fixos */
+    flex-basis: 30%;
+}
+
+.box:nth-child(7) {
+    /* muda a ordem */
+    order: 3;
+}

@@ -1,0 +1,170 @@
+                /* font-size = tamanho da Letra */
+                /* font-weight = Finura da Letra (100 até 900) */
+                /* text-align = Posição do Texto */
+                /*tira o margin e o padding da página inteira para que você consiga programar do 0  */
+                * {
+                    margin: 0;
+                    padding: 0;
+                    box-sizing: border-box;
+                }
+
+                :root {
+                    font-size: 62.5%;
+                }
+
+                body {
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-size: 1.8rem;
+                }
+
+                main {
+                    padding-top: 7rem;
+                }
+
+                table, td, th {
+                    border: 1px solid black;
+                }
+                /* first-child = primeiro elemento */
+                table tr:first-child {
+                    background-color: steelblue;
+                    color: #fff;
+                }
+                /* intercala a cor das linhas */
+                table tr:nth-child(2n + 3) {
+                    background-color: #555;
+                    color: #fff;
+                }
+
+                table {
+                    font-size: 2.4rem;
+                    /* collapse retira as linhas duplas da tabela*/
+                    border-collapse: collapse;
+                }
+
+                h1 {
+                    color: #111011;
+                    font-size: 96px;
+                    font-size: 9.6rem;
+                    font-weight: 900;
+                    text-align: center; 
+                    text-decoration: underline;
+                    /* transforma o texto  */
+                    text-transform: uppercase;
+                    /* posição do texto: começo, meio ou fim */
+                    text-align: center;
+                    /* altera as fontes */
+
+                }
+
+                h1, h2, h3, h4, h5, h6 {
+                    font-family: Roboto, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                }
+
+                h2 {
+                    font-size: 6.4rem;
+                }
+
+                h3 {
+                    color: aqua;
+                    font-size: 3.2rem;
+                    /* coloca o estilo na letra */
+                    font-style: oblique;
+                }
+
+                .novo-em {
+                    font-size: 300%;
+                }
+
+                .novo-em h2 {
+                    font-size: 3.2em;
+                }
+
+                p {
+                    font-size: 1.8rem;
+                    /* alinha o texto  */
+                    text-align: justify;
+                    /* recua a primeira linha */
+                    text-indent: 90px;
+                }
+
+                /* seguir esta ordem nos links */
+                a {
+                    font-size: 1.4em;
+                    color: red;
+
+                }
+
+                /* quando o link foi visitado */
+                a:visited {
+                    color: blue;
+                }
+
+                /* para mudar quando o mouse passa por cima */
+                a:hover {
+                    color: aqua;
+                }
+
+                a:active {
+                    color: #32054b;
+                }
+
+                /* background-image: url = coloca um link de uma imagem */
+                
+                .bg {
+                    height: 100vh;
+                    width: 100vw;
+                    background-color: #32054b;
+                    /* coloca uma imagem de fundo vindo de um link */
+                    background-image: url(https://images.unsplash.com/photo-1717819520943-2f20d73d00c9?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+                    /* estilo da capa */
+                    background-size: cover;
+                    /* repetição da imagem */
+                    background-repeat: no-repeat;
+                    /* posição do background */
+                    background-position: center;
+                    /* fixa ou não a imagem */
+                    background-attachment: fixed;
+                }
+
+                ul, ol {
+                    padding-left: 0;
+                    list-style: circle;
+                }
+
+                ul {
+                    list-style: square;
+                }
+
+                ol {
+                    list-style: inside;
+                }
+
+                nav.menu {
+                    position: fixed;
+                    background-color: steelblue;
+                    width: 100%;
+                    height: 7rem;
+                    z-index: 1;
+                }
+
+                .boxes {
+                    position: relative;
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+
+                .box {
+                    height: 100px;
+                    width: 20rem;
+                    /* faz efeito fora do elemento */
+                    margin: 1.5rem;
+                    /* atua dentro da caixa */
+                    padding: 3.0rem;
+                    border: 10px solid red;
+                    color: #fff;
+                    background-color: blue;
+                    display: relative;
+                    /* arredonda a borda */
+                    border-radius: 2.0rem;
+                }
+
